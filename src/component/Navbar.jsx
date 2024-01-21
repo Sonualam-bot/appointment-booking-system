@@ -4,8 +4,8 @@ import externalLink from "../assets/external-link.svg";
 function Navbar() {
   return (
     <div className="flex  justify-between items-center px-[40px] py-[12px] bg-white shadow-md  ">
-      <div className="w-[228px] h-[61px] flex-shrink-0 bg-[url('./assets/logo.png')] mix-blend-multiply "></div>
-      <div className="flex w-[708.5px] justify-end items-center gap-5 flex-shrink-0 ">
+      <div className="w-[228px] h-[61px]  bg-[url('./assets/logo.png')] mix-blend-multiply "></div>
+      <div className="flex w-[708.5px] justify-end items-center gap-5 ">
         <div className="flex items-center gap-[6px]">
           <p className="text-[#090F4E] text-right text-[18px] font-medium leading-normal ">
             Menu
