@@ -1,13 +1,16 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import dayjs from "dayjs";
 import { CalenderContext } from "../context/CalenderContext";
-import arrowDown from "../assets/chevron-down.svg";
 import divider from "../assets/divider.svg";
 import circleCheck from "../assets/circle-check.svg";
 
 function Slot() {
-  const { selectDate, availableSlots } = useContext(CalenderContext);
-  const [selectedSlotIndex, setSelectedSlotIndex] = useState(null);
+  const {
+    selectDate,
+    availableSlots,
+    selectedSlotIndex,
+    setSelectedSlotIndex,
+  } = useContext(CalenderContext);
 
   const selectedDateString = selectDate.format("YYYY-MM-DD");
 
@@ -54,11 +57,6 @@ function Slot() {
                   {variant.label}
                 </option>
               ))}
-              <img
-                src={arrowDown}
-                alt="/down-arrow"
-                className="w-6 h-6 pr-2 bg-[#378760]"
-              />
             </select>
           </div>
           <div>
