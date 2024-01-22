@@ -14,7 +14,7 @@ function Footer() {
   const { selectedSlotIndex } = useContext(CalenderContext);
 
   return (
-    <div className="flex sm:w-[100%] px-[30px] py-[10px] items-center md:self-stretch justify-between bg-[#378760] rounded-b-lg ">
+    <div className="flex sm:w-[100%] px-[30px] py-[10px] items-center md:self-stretch justify-between bg-[#378760] md:rounded-b-lg sm:rounded-b-none ">
       <p className="text-white  font-Poppins text-[15px] font-semibold leading-[21px] text-uppercase  ">
         Powered By <span className="underline ">Appointo</span>{" "}
       </p>
