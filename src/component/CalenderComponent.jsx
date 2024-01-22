@@ -2,8 +2,8 @@ import { generateDate, months } from "../utils/calender";
 import cn from "./cn";
 import { useContext } from "react";
 
-import leftArrow from "../assets/Chevron-left.svg";
-import rightArrow from "../assets/Chevron-right.svg";
+import leftArrow from "../assets/chevron-left.svg";
+import rightArrow from "../assets/chevron-right.svg";
 import { CalenderContext } from "../context/CalenderContext";
 
 function CalenderComponent() {
