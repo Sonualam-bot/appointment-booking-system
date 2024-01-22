@@ -8,6 +8,7 @@ export const CalenderContextProvider = ({ children }) => {
   const [today, setToday] = useState(currentDate);
   const [selectDate, setSelectDate] = useState(currentDate);
   const [availableSlots, setAvailableSlots] = useState([]);
+  const [selectedSlotIndex, setSelectedSlotIndex] = useState(null);
 
   const fetchSlotsForBooking = async () => {
     try {
@@ -15,7 +16,6 @@ export const CalenderContextProvider = ({ children }) => {
         "https://app.appointo.me/scripttag/mock_timeslots?start_date=2024-01-20&end_date=2024-01-30";
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
       setAvailableSlots(data);
     } catch (error) {
       throw new Error(`${error.message}`);
@@ -28,6 +28,8 @@ export const CalenderContextProvider = ({ children }) => {
     selectDate,
     setSelectDate,
     availableSlots,
+    selectedSlotIndex,
+    setSelectedSlotIndex,
   };
 
   useEffect(() => {

@@ -20,7 +20,7 @@ function CalenderComponent() {
   };
 
   return (
-    <div className="w-96 h-[365px] ">
+    <div className="md:w-96 sm:w-80  md:h-[365px] sm:h-[310px] ">
       <div className="flex justify-between items-center  border border-b-[#F2F2F5] py-[10px] px-5  ">
         <img
           src={leftArrow}
@@ -44,7 +44,7 @@ function CalenderComponent() {
           return (
             <h1
               key={index}
-              className="h-8 grid place-content-center text-sm font-Poppins text-[14px] font-normal leading-normal  "
+              className="h-8  grid place-content-center text-sm font-Poppins md:text-[14px] sm:text-[12px] font-normal leading-normal  "
             >
               {day}
             </h1>
@@ -58,7 +58,7 @@ function CalenderComponent() {
             return (
               <div
                 key={index}
-                className="h-12 border-t grid place-content-center text-sm "
+                className="md:h-12 sm:h-[38px] border-t grid place-content-center text-sm "
               >
                 <h1
                   className={cn(
@@ -68,7 +68,7 @@ function CalenderComponent() {
                       date.toDate().toDateString()
                       ? "bg-[#378760]  text-white"
                       : "",
-                    "h-10 w-14 grid place-content-center rounded-[99px] hover:bg-[#378760] hover:text-white transition-all cursor-pointer "
+                    "md:h-10 sm:h-7 md:w-14 sm:w-11 grid place-content-center rounded-[99px] hover:bg-[#378760] hover:text-white transition-all cursor-pointer "
                   )}
                   onClick={() => {
                     setSelectDate(date);

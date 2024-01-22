@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 function Homepage() {
   return (
-    <div className="flex flex-col w-[928px] h-[572px] items-center flex-shrink-0 rounded-xl shadow-lg bg-white   ">
+    <div className="flex flex-col customMd:w-[95%] lg:w-[928px]  items-center md:flex-shrink-0 rounded-xl shadow-lg bg-white z-10  ">
       <Booking />
       <Footer />
     </div>
